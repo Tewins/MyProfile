@@ -1,0 +1,472 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Портфолио</title>
+    <link rel="stylesheet" href="style.css">    
+    <style>
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+body{
+    margin: 0px;
+    padding: 0px;
+}
+
+.header{
+    background-color: #EEEFF1;
+}
+
+.header-area{
+    padding: 79px 410px 0px 410px;
+}
+
+.header__row{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+a{
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.nav{
+    display: flex;
+    gap: 40px;
+}
+
+.nav-item__Auto{
+    color: #353535;
+    font-family: Roboto;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 164.063%; /* 26.25px */
+    letter-spacing: 1.6px;
+}
+
+.nav-item{
+    color: #000;
+    font-family: Roboto;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 164.063%; /* 26.25px */
+    letter-spacing: 1.6px;
+}
+
+.about{
+    background-color: #EEEFF1;
+    padding: 150px 0px 100px 0px;
+}
+
+.about__row{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 20px;
+    padding: 0px 175px 0px 175px;
+}
+
+.about__title{
+    color: #000;
+    font-family: Roboto;
+    font-size: 48px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 164.063%; /* 78.75px */
+}
+
+.about__subtitle{
+    max-width: 531px;
+    color: #727272;
+    font-family: Roboto;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 164.063%; /* 26.25px */    
+    margin: 60px 10px 60px 10px;
+    
+}
+
+.about__buttitle{
+    padding: 15px;
+    color: #FFF;
+    text-align: center;
+    font-family: Roboto;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 164.063%; /* 26.25px */
+    letter-spacing: 1.6px;
+    width: 225px;
+    background: #353535;
+    margin: 0px 0px 0px 0px;
+}
+
+.title{
+    background-color: #FFF;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 100px 0px 100px 0px;
+}
+
+.title-item{
+    color: #000;
+    text-align: center;
+    font-family: Roboto;
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;    
+}
+
+.title-subitem{
+    margin: 50px 25px 0px 25px;
+    max-width: 940px;
+    color: #727272;
+    text-align: center;
+    font-family: Roboto;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 164.063%; /* 26.25px */
+}
+
+.skills{
+    height: 535px;
+}
+
+.skils__row{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0px 315px 0px 315px;
+    gap: 20px;
+}
+
+@media (max-width: 1600px){
+    .skils__row{
+        padding: 0px 170px 0px 170px;
+    }
+}
+
+@media (max-width: 1300px){
+    .skils__row{
+        padding: 0px 85px 0px 85px;
+    }
+}
+
+@media (max-width: 1500px){
+    .about{
+        padding: 0px 0px 100px 0px;
+    }
+    .header-area{
+        padding: 79px 170px 100px 170px;
+    }
+}
+
+@media (max-width: 1120px){
+    .skils__row{
+        padding: 0px 43px 0px 43px;
+    }
+    .header__row{
+        flex-direction: column;
+        gap: 50px;
+    }
+    .about{
+        padding: 0px 0px 100px 0px;
+    }
+    .header-area{
+        padding: 79px 170px 100px 170px;
+    }
+}
+
+@media (max-width: 1040px){
+    .skils__row{
+        flex-direction: column;
+        text-align: center;
+    }
+    .skills{
+        padding: 0px 0px 250px 0px;
+    }
+}
+
+@media (max-width: 912px){
+    .about__row{
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    .about__title{
+        text-align: center;
+    }
+    .about__subtitle{
+        text-align: center;
+    }
+    .about__column{
+        align-items: center;
+        justify-content: center;
+        display: flex;
+        flex-direction: column;
+    }
+    .work{
+        flex-direction: column;
+    }
+}
+
+@media (max-width: 512px){
+    .im3{
+        width: 95%;
+    }
+
+}
+
+.skils-item__auto{
+    color: #000;
+    font-family: Roboto;
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    margin: 0px 0px 50px 0px;
+}
+
+.skils-item{
+    color: #727272;
+    font-family: Roboto;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 164.063%; /* 26.25px */
+}
+
+.work-info{
+    background-color: #EEEFF1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 100px 0px 100px 0px;
+}
+
+
+.work{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 85px;
+    padding: 80px 0px 0px 0px;
+}
+
+.website{
+    margin: 80px 0px 0px 0px;
+    background: #EEEFF1;
+    height: 467px;
+}
+
+.website-info{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 40px 0px 0px 0px;
+}
+
+.footer{
+    height: 151px;
+    background: #353535;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 100px; 
+}
+.footer-title{
+    color: #FFF;
+    font-family: Roboto;
+    font-size: 21px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+}
+
+img {
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+  
+img:hover {
+    transform: scale(1.1);
+    box-shadow: 0 25px 10px rgba(0, 0, 0, 0.3);
+}
+
+.div2 {
+    transition: transform 0.3s, box-shadow 0.3s;
+  }
+  
+  .div2:hover {
+    transform: scale(1.1);
+    box-shadow: 0 25px 10px rgba(0, 0, 0, 0.3);
+  }
+  
+  
+  
+.burger-menu-icon {
+    display: none;
+    font-size:  4em;
+
+}
+
+
+@media screen and (max-width: 768px) {
+    .header__column-nav {
+        flex-direction: column;
+    }
+
+    .burger-menu-icon {
+        display: block;
+    }
+
+    .nav {
+        display: none;
+        position: absolute;
+        left: -100%;
+        top: 0;
+        width: 100%;
+        background-color: #fff;
+        padding: 20px;
+        transition: left 0.3s ease-in-out;
+    }
+
+    .nav.open {
+        display: flex;
+        flex-direction: column;
+        left: 0;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .img5{
+        width: 100%;
+    }
+
+
+}
+  
+@media screen and (max-width: 384px) {
+    .img6{
+        height: 150px;
+    }
+}
+
+
+    </style>
+</head>
+<body>
+    <header class="header">
+        <div class="header-area">
+            <div class="header__row">
+                <div class="header__column">
+                    <a href=""><img src="Images/headers/Logo.png" alt=""></a>
+                </div>
+                <div class="header__column-nav">
+                    <nav class="nav">
+                        <a class="nav-item__Auto" href="#">MAIN</a>
+                        <a class="nav-item" href="#1">OB AUTHORE</a>
+                        <a class="nav-item" href="#2">WORK</a>
+                        <a class="nav-item" href="#4">CONTACT</a>
+                    </nav>
+                    <div class="burger-menu-icon">&#9776;</div>
+                </div>
+            </div>
+        </div>
+    </header>
+    
+    <div class="about">
+        <div class="about__row">
+            <div class="about__column">
+                <a href="https://github.com/Tewins"><img  class="img6" src="Images/About/Frame.png" alt=""></a>
+            </div>
+            <div class="about__column">
+                <div class="about__title">Design and layout</div>
+                <div class="about__subtitle">I'm just a beginner designer (almost) and layout designer with a focus on creating attractive and functional websites. It is important to me that if you can create, then create without regret.</div>
+                <a href="https://t.me/Kuronykits"><div class="about__buttitle div2">WRITE TO ME</div></a>
+            </div>
+        </div>
+    </div>
+    
+    <div class="title" id="1">
+        <div class="title__row">
+            <div class="title__column">
+                <div class="title-item">About Me</div>
+                <div class="title-subitem">I strive to create aesthetically pleasing and easy to use websites that satisfy clients' needs and provide a great user experience. My goal is to create visually appealing interfaces that provide a great user experience.</div>
+            </div>
+        </div>
+    </div>
+
+    <div class="skills">
+        <div class="skils__row">
+            <div class="skils__column">
+                <div class="skils-item__auto">
+                    My skills
+                </div>
+                <div class="skils-item">
+                    Unity<br>
+                    <img class="img5" src="Images/skills/Group 2.png" alt="">
+                </div>
+                <div class="skils-item">
+                    Html\Css\js<br>
+                    <img class="img5" src="Images/skills/Group 3.png" alt="">
+                </div>
+                <div class="skils-item">
+                    c#<br>
+                    <img class="img5" src="Images/skills/Group 4.png" alt="">
+                </div>
+            </div>
+            <div class="skils__column">
+                <a href="https://t.me/KuronyKit"><img class="im3" src="Images/skills/Its-me.png" alt=""></a>
+            </div>
+        </div>
+    </div>
+
+    <div class="work-info"  id="2">
+        <div class="title__row">
+            <div class="title__column">
+                <div class="title-item">How do I work?</div>
+                <div class="title-subitem">I work in information technology and do software development. My skills include programming, implementation and maintenance of software systems. I can work with various programming languages and study frameworks. My approach to work is systematic and methodical, and I always strive to improve quality and efficiency in my IT work. You can also see my work on Github!</div>
+            </div>
+        </div>
+    </div>
+
+    <div class="work">
+        <a href="https://code.visualstudio.com/"><div class="work-item"><img style="height: 130px;" src="Images/skills/image 8.png" alt=""></div></a>
+        <a href="https://www.sublimetext.com/"><div class="work-item"><img  style="height: 130px;" src="Images/skills/image 7.png" alt=""></div></a>
+        <a href="https://unity.com/ru"><div class="work-item"><img src="Images/skills/image 4.png" alt=""></div></a>
+        <a href="https://visualstudio.microsoft.com/ru/"><div class="work-item"><img  style="height: 130px;" src="Images/skills/image 6.png" alt=""></div></a>
+    </div>
+
+    <div class="title website">
+        <div class="title__row">
+            <div class="title__column">
+                <div class="title-item">Want a website?</div>
+                <div class="title-subitem">If you want to create your own website, I can help you with that. You will need to determine what goals and requirements you have for the site, and I can provide you with solutions accordingly. Contact me with more information about your needs and I will be happy to help you create a functional and attractive website. You can also see my work on Github.</div>
+            </div>
+            <div class="title__column website-info">
+                <a href="https://t.me/Kuronykits"><div class="about__buttitle website-info div2">WRITE TO ME</div></a>
+            </div>            
+        </div>
+    </div>
+
+    <footer class="footer"  id="4">
+        <div class="footer__row">
+            <div class="footer-title">Timofey Andreevich</div>
+        </div>
+            <div class="sochialmedia">
+                <a href="https://github.com/Tewins"><img src="Images/soshialmedia/git.png" alt=""></a>
+                <a href="https://t.me/Kuronykits"><img src="Images/soshialmedia/telegram.png" alt=""></a>
+            </div>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

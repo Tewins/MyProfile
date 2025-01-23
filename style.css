@@ -1,0 +1,353 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+body{
+    margin: 0px;
+    padding: 0px;
+}
+
+.header{
+    background-color: #EEEFF1;
+}
+
+.header-area{
+    padding: 79px 410px 0px 410px;
+}
+
+.header__row{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+a{
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.nav{
+    display: flex;
+    gap: 40px;
+}
+
+.nav-item__Auto{
+    color: #353535;
+    font-family: Roboto;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 164.063%; /* 26.25px */
+    letter-spacing: 1.6px;
+}
+
+.nav-item{
+    color: #000;
+    font-family: Roboto;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 164.063%; /* 26.25px */
+    letter-spacing: 1.6px;
+}
+
+.about{
+    background-color: #EEEFF1;
+    padding: 150px 0px 100px 0px;
+}
+
+.about__row{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 20px;
+    padding: 0px 175px 0px 175px;
+}
+
+.about__title{
+    color: #000;
+    font-family: Roboto;
+    font-size: 48px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 164.063%; /* 78.75px */
+}
+
+.about__subtitle{
+    max-width: 531px;
+    color: #727272;
+    font-family: Roboto;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 164.063%; /* 26.25px */    
+    margin: 60px 10px 60px 10px;
+    
+}
+
+.about__buttitle{
+    padding: 15px;
+    color: #FFF;
+    text-align: center;
+    font-family: Roboto;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 164.063%; /* 26.25px */
+    letter-spacing: 1.6px;
+    width: 225px;
+    background: #353535;
+    margin: 0px 0px 0px 0px;
+}
+
+.title{
+    background-color: #FFF;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 100px 0px 100px 0px;
+}
+
+.title-item{
+    color: #000;
+    text-align: center;
+    font-family: Roboto;
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;    
+}
+
+.title-subitem{
+    margin: 50px 25px 0px 25px;
+    max-width: 940px;
+    color: #727272;
+    text-align: center;
+    font-family: Roboto;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 164.063%; /* 26.25px */
+}
+
+.skills{
+    height: 535px;
+}
+
+.skils__row{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0px 315px 0px 315px;
+    gap: 20px;
+}
+
+@media (max-width: 1600px){
+    .skils__row{
+        padding: 0px 170px 0px 170px;
+    }
+}
+
+@media (max-width: 1300px){
+    .skils__row{
+        padding: 0px 85px 0px 85px;
+    }
+}
+
+@media (max-width: 1500px){
+    .about{
+        padding: 0px 0px 100px 0px;
+    }
+    .header-area{
+        padding: 79px 170px 100px 170px;
+    }
+}
+
+@media (max-width: 1120px){
+    .skils__row{
+        padding: 0px 43px 0px 43px;
+    }
+    .header__row{
+        flex-direction: column;
+        gap: 50px;
+    }
+    .about{
+        padding: 0px 0px 100px 0px;
+    }
+    .header-area{
+        padding: 79px 170px 100px 170px;
+    }
+}
+
+@media (max-width: 1040px){
+    .skils__row{
+        flex-direction: column;
+        text-align: center;
+    }
+    .skills{
+        padding: 0px 0px 250px 0px;
+    }
+}
+
+@media (max-width: 912px){
+    .about__row{
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    .about__title{
+        text-align: center;
+    }
+    .about__subtitle{
+        text-align: center;
+    }
+    .about__column{
+        align-items: center;
+        justify-content: center;
+        display: flex;
+        flex-direction: column;
+    }
+    .work{
+        flex-direction: column;
+    }
+}
+
+@media (max-width: 512px){
+    .im3{
+        width: 95%;
+    }
+
+}
+
+.skils-item__auto{
+    color: #000;
+    font-family: Roboto;
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    margin: 0px 0px 50px 0px;
+}
+
+.skils-item{
+    color: #727272;
+    font-family: Roboto;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 164.063%; /* 26.25px */
+}
+
+.work-info{
+    background-color: #EEEFF1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 100px 0px 100px 0px;
+}
+
+
+.work{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 85px;
+    padding: 80px 0px 0px 0px;
+}
+
+.website{
+    margin: 80px 0px 0px 0px;
+    background: #EEEFF1;
+    height: 467px;
+}
+
+.website-info{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 40px 0px 0px 0px;
+}
+
+.footer{
+    height: 151px;
+    background: #353535;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 100px; 
+}
+.footer-title{
+    color: #FFF;
+    font-family: Roboto;
+    font-size: 21px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+}
+
+img {
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+  
+img:hover {
+    transform: scale(1.1);
+    box-shadow: 0 25px 10px rgba(0, 0, 0, 0.3);
+}
+
+.div2 {
+    transition: transform 0.3s, box-shadow 0.3s;
+  }
+  
+  .div2:hover {
+    transform: scale(1.1);
+    box-shadow: 0 25px 10px rgba(0, 0, 0, 0.3);
+  }
+  
+  
+  
+.burger-menu-icon {
+    display: none;
+    font-size:  4em;
+
+}
+
+
+@media screen and (max-width: 768px) {
+    .header__column-nav {
+        flex-direction: column;
+    }
+
+    .burger-menu-icon {
+        display: block;
+    }
+
+    .nav {
+        display: none;
+        position: absolute;
+        left: -100%;
+        top: 0;
+        width: 100%;
+        background-color: #fff;
+        padding: 20px;
+        transition: left 0.3s ease-in-out;
+    }
+
+    .nav.open {
+        display: flex;
+        flex-direction: column;
+        left: 0;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .img5{
+        width: 100%;
+    }
+
+
+}
+  
+@media screen and (max-width: 384px) {
+    .img6{
+        height: 150px;
+    }
+}
+
